@@ -37,6 +37,7 @@ jobs:
           Write-Output "branch=${{ github.event.inputs.branch }}"
           Write-Output "commit_sha=${{ github.event.inputs.commit_sha }}"
           Write-Output "java_version=${{ github.event.inputs.java_version }}"
+          
       - name: Checkout Repository
         run: |
           git clone ${{ github.event.inputs.repo_url }} ${{ github.event.inputs.name }}
